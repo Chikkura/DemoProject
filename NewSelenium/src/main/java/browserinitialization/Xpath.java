@@ -56,6 +56,7 @@ public class Xpath extends Base {
 		 driver.navigate().to("https://selenium.qabible.in/simple-form-demo.php");//first navigate to page u want to automate
 		 
 		 WebElement test =driver.findElement(By.xpath("//input[@class='form-control']"));
+		 System.out.println(test.isEnabled());
 		 test.sendKeys("Hello");
 		 WebElement test1 =driver.findElement(By.xpath("//button[@id='button-one']"));
 		 test1.click();
@@ -65,13 +66,16 @@ public class Xpath extends Base {
 	public static void main(String[] args) {
 		
 		Xpath x= new Xpath();
-		//x.intialisebrowser();
-		//x.relativexpath();
-		//x.contains();
-		//x.stratsWith();
-		//x.and();
-		//x.or();
-		//x.text();
+		x.intialisebrowser();
+		
+		/*x.relativexpath();
+		x.contains();
+		x.stratsWith();
+		x.and();
+		x.or();
+		x.text();*/
+		
+		
 		x.automatetest();
 		
 		
