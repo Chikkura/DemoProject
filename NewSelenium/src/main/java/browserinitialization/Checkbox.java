@@ -5,15 +5,17 @@ import org.openqa.selenium.WebElement;
 
 public class Checkbox extends Base{
 	
-	/*public void checkbox()
+	public void checkbox()
 	{
 		
 		driver.navigate().to("https://selenium.qabible.in/check-box-demo.php");
 		WebElement c = driver.findElement(By.xpath("//input[@id='gridCheck']"));
+		
 		c.click();
+		System.out.println(c.isSelected());
 		
 		
-	}*/
+	}
 	
 	public void radiobutton()
 	{
